@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9242F3E24043C4900FFCE53 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9242F3D24043C4900FFCE53 /* Player.swift */; };
 		D9343CD923FFF97E00BEA5B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9343CD823FFF97E00BEA5B4 /* AppDelegate.swift */; };
 		D9343CDB23FFF97E00BEA5B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9343CDA23FFF97E00BEA5B4 /* SceneDelegate.swift */; };
 		D9343CDD23FFF97E00BEA5B4 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9343CDC23FFF97E00BEA5B4 /* StartViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D9242F3D24043C4900FFCE53 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		D9343CD523FFF97E00BEA5B4 /* Swoosh app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swoosh app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9343CD823FFF97E00BEA5B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9343CDA23FFF97E00BEA5B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D9242F3A24043BFD00FFCE53 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9242F3D24043C4900FFCE53 /* Player.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D9343CCC23FFF97E00BEA5B4 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +72,7 @@
 		D9343CD723FFF97E00BEA5B4 /* Swoosh app */ = {
 			isa = PBXGroup;
 			children = (
+				D9242F3A24043BFD00FFCE53 /* Models */,
 				D9E465982402C0DC009A103B /* Controller */,
 				D9343CEC240000EC00BEA5B4 /* Views */,
 				D9343CD823FFF97E00BEA5B4 /* AppDelegate.swift */,
@@ -167,6 +178,7 @@
 				D9343CDD23FFF97E00BEA5B4 /* StartViewController.swift in Sources */,
 				D9343CD923FFF97E00BEA5B4 /* AppDelegate.swift in Sources */,
 				D9E4659724028F55009A103B /* leagueVc.swift in Sources */,
+				D9242F3E24043C4900FFCE53 /* Player.swift in Sources */,
 				D9343CDB23FFF97E00BEA5B4 /* SceneDelegate.swift in Sources */,
 				D9343CEE240004A000BEA5B4 /* BorderButton.swift in Sources */,
 			);

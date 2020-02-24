@@ -9,12 +9,15 @@
 import UIKit
 
 class leagueVc: UIViewController {
+    
+    var player : Player!
 
-
+    @IBOutlet weak var nextBtn: BorderButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        player = Player()
 
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func BackViewFirst(_ sender: Any) {
@@ -23,6 +26,29 @@ class leagueVc: UIViewController {
     
     @IBAction func NextbuttonPressed(_ sender: Any) {
         performSegue(withIdentifier: "SkillSegue", sender: self)
+    }
+    
+    @IBAction func mensTapped(_ sender: Any) {
+        SelectPlayerType(type: "mens")
+    }
+    
+    @IBAction func womensTapped(_ sender: Any) {
+        SelectPlayerType(type: "womens")
+    }
+    
+    @IBAction func coedTapped(_ sender: Any) {
+        SelectPlayerType(type: "coed")
+    }
+    
+    func SelectPlayerType(type : String){
+        player.desiredLeague = type
+        nextBtn.isEnabled = true
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SkillSegue"{
+            let destionVc = segue.destination as? SkillVc
+            destionVc?.player = player
+        }
     }
     /*
     // MARK: - Navigation
